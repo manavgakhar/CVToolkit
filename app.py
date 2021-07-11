@@ -10,6 +10,7 @@ from sem_seg import segmentation
 
 st.image("data/logo.png")
 st.write("")
+st.markdown(" ### Inference is CPU based so processing might take some time.")
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_option('deprecation.showPyplotGlobalUse', False)
