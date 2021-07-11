@@ -8,8 +8,7 @@ import matplotlib.pyplot as plt
 from numpy import asarray
 from sem_seg import segmentation
 
-
-st.title("Computer Vision Toolkit")
+st.image("data/logo.png")
 st.write("")
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
