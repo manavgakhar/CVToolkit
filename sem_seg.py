@@ -10,7 +10,7 @@ import streamlit as st
 
 ctx = mx.cpu(0)
 
-@st.cache()
+
 def segmentation(img):
     img = mx.nd.array(img)
     img = test_transform(img, ctx)
