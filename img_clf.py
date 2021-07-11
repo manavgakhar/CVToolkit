@@ -2,6 +2,7 @@ from torchvision import models, transforms
 import torch
 from PIL import Image
 
+@st.cache()
 def predict(image_path):
     
     #loading model
