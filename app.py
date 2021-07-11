@@ -18,14 +18,14 @@ file_up = st.file_uploader("Upload an image", type="jpg")
 
 
 
-option = st.selectbox('Which feature would you like to use?',('Image Classification','Object Detection','Named Entity Recognition'))
+option = st.selectbox('Which feature would you like to use?',('Image Classification','Object Detection'))
 
 
 
 if file_up is not None and option == "Image Classification":
 
     image = Image.open(file_up)
-    st.image(image, caption='Uploaded Image.', use_column_width=False)
+    st.image(image, caption='Uploaded Image.', use_column_width=True)
     st.write("")
     st.write("Just a second...")
     labels = predict(file_up)
