@@ -6,6 +6,7 @@ from PIL import Image
 from obj_det import detect
 import matplotlib.pyplot as plt
 from numpy import asarray
+from sem_seg import segmentation
 
 
 st.title("Computer Vision Toolkit")
@@ -18,14 +19,14 @@ file_up = st.file_uploader("Upload an image", type="jpg")
 
 
 
-option = st.selectbox('Which feature would you like to use?',('Image Classification','Object Detection'))
+option = st.selectbox('Which feature would you like to use?',('Image Classification','Object Detection','Semantic Segmentation'))
 
 
 
 if file_up is not None and option == "Image Classification":
 
     image = Image.open(file_up)
-    st.image(image, caption='Uploaded Image.', use_column_width=True)
+    st.image(image, caption='Uploaded Image.', use_column_width=False)
     st.write("")
     st.write("Just a second...")
     labels = predict(file_up)
@@ -41,9 +42,17 @@ if file_up is not None and option == "Object Detection":
 
     img = Image.open(file_up)
     img = asarray(img)
-  
+
     plot = detect(img)
-    
+
     st.pyplot()
-    
-    
+
+
+if file_up is not None and option == "Semantic Segmentation":
+
+    img = Image.open(file_up)
+    img = asarray(img)
+
+    plot = segmentation(img)
+
+    st.pyplot()
