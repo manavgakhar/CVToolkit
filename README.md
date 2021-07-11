@@ -5,5 +5,4 @@
 - Object Detection (Faster-RCNN with ResNet-50 backbone pre-trained on Pascal VOC)
 - Semantic Segmentation (FCN with ResNet-101 backnone pre-trained on Pascal VOC)
 
-### The app is running at - https://share.streamlit.io/manavgakhar/cvtoolkit/main/app.py
-### Previews :
+## Clone the repository and use *streamlit run app.py* to run the app locally
