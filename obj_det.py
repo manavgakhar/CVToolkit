@@ -4,7 +4,7 @@ from gluoncv import model_zoo, data, utils
 import mxnet as mx
 import cv2
 
-
+@st.cache()
 def detect(img):
     
     img = mx.nd.array(img)
