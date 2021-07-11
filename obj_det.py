@@ -5,7 +5,7 @@ import mxnet as mx
 import cv2
 import streamlit as st
 
-@st.cache()
+
 def detect(img):
     
     img = mx.nd.array(img)
