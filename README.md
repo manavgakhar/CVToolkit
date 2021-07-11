@@ -5,4 +5,11 @@
 - Object Detection (Faster-RCNN with ResNet-50 backbone pre-trained on Pascal VOC)
 - Semantic Segmentation (FCN with ResNet-101 backnone pre-trained on Pascal VOC)
 
-## Clone the repository and use command ***streamlit run app.py*** to run the app locally
+## Preview
+
+![image](https://user-images.githubusercontent.com/55736716/125191664-32fbcd00-e261-11eb-8029-5f6dc6a50923.png)
+
+![image](https://user-images.githubusercontent.com/55736716/125191665-342cfa00-e261-11eb-96be-c27c9561f834.png)
+
+![image](https://user-images.githubusercontent.com/55736716/125191666-34c59080-e261-11eb-8fbb-15798ef81b6e.png)
+
