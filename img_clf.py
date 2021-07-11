@@ -3,7 +3,7 @@ import torch
 from PIL import Image
 import streamlit as st
 
-@st.cache()
+
 def predict(image_path):
     
     #loading model
