@@ -2,6 +2,7 @@ from matplotlib import pyplot as plt
 import gluoncv
 from gluoncv import model_zoo, data, utils
 import mxnet as mx
+import cv2
 
 
 def detect(img):
