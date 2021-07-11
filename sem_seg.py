@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 ctx = mx.cpu(0)
 
-
+@st.cache()
 def segmentation(img):
     img = mx.nd.array(img)
     img = test_transform(img, ctx)
