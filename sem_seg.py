@@ -5,6 +5,8 @@ import gluoncv
 from gluoncv.data.transforms.presets.segmentation import test_transform
 from gluoncv.utils.viz import get_color_pallete
 import matplotlib.pyplot as plt
+import streamlit as st
+
 
 ctx = mx.cpu(0)
 
